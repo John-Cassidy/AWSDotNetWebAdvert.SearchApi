@@ -23,7 +23,7 @@ namespace AWSDotNetWebAdvert.SearchApi.Controllers {
         [HttpGet]
         [Route("{keyword}")]
         public async Task<List<AdvertType>> Get(string keyword) {
-            _logger.LogInformation("Search method was called");
+            _logger.LogInformation("SearchApi Search method was called");
             return await _searchService.Search(keyword);
         }
     }
